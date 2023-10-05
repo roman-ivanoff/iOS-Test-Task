@@ -30,26 +30,14 @@ class PostListViewController: UIViewController {
         postListModel.fetchPosts { [weak self] _ in
             guard let self else { return }
             
-            self.toggleActivityIndicator(isLoading: postListModel.isLoading)
+            self.toggleActivityIndicator(activityIndicator: self.activityIndicator, isLoading: postListModel.isLoading)
             self.cellsState = [Bool](repeating: false, count: self.postListModel.posts.count)
             self.tableView.reloadData()
         } onError: { [weak self] error in
             guard let self else { return }
-            self.toggleActivityIndicator(isLoading: postListModel.isLoading)
+            self.toggleActivityIndicator(activityIndicator: self.activityIndicator, isLoading: self.postListModel.isLoading)
             self.showAlert(title: "Something went wrong", message: "Please, try again later")
         }
-
-    }
-    
-    private func toggleActivityIndicator(isLoading: Bool) {
-        isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
-    }
-    
-    private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default)
-        alert.addAction(okAction)
-        present(alert, animated: true)
     }
     
     @IBAction func sortByRating(_ sender: UIBarButtonItem) {
@@ -71,6 +59,21 @@ extension PostListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        defer {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        
+        postListModel.postId = postListModel.posts[indexPath.row].id
+        performSegue(withIdentifier: "postId", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let postDetailsVC = segue.destination as! PostDetailViewController
+        guard let postId = postListModel.postId else { return }
+        postDetailsVC.postDetailModel.postId = postId
     }
 }
 

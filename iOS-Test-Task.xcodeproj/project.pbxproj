@@ -25,6 +25,11 @@
 		FDD327EF2ACEEBA6006D4E20 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327EE2ACEEBA6006D4E20 /* PostListModel.swift */; };
 		FDD327F62ACF017D006D4E20 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327F52ACF017D006D4E20 /* Helper.swift */; };
 		FDD327F92ACF02BB006D4E20 /* UILabel+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */; };
+		FDD328022ACF2CB9006D4E20 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD328012ACF2CB9006D4E20 /* PostDetailViewController.swift */; };
+		FDD328042ACF2CD3006D4E20 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD328032ACF2CD3006D4E20 /* PostDetailModel.swift */; };
+		FDD328082ACF30D9006D4E20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FDD328072ACF30D9006D4E20 /* Kingfisher */; };
+		FDD3280A2ACF38E7006D4E20 /* UIViewController+Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD328092ACF38E7006D4E20 /* UIViewController+Functionality.swift */; };
+		FDD3280C2ACF3D81006D4E20 /* Date+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3280B2ACF3D81006D4E20 /* Date+Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,10 @@
 		FDD327EE2ACEEBA6006D4E20 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
 		FDD327F52ACF017D006D4E20 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Configuration.swift"; sourceTree = "<group>"; };
+		FDD328012ACF2CB9006D4E20 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		FDD328032ACF2CD3006D4E20 /* PostDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
+		FDD328092ACF38E7006D4E20 /* UIViewController+Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functionality.swift"; sourceTree = "<group>"; };
+		FDD3280B2ACF3D81006D4E20 /* Date+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Configuration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD328082ACF30D9006D4E20 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,7 @@
 		FDD327BF2ACEC6E3006D4E20 /* iOS-Test-Task */ = {
 			isa = PBXGroup;
 			children = (
+				FDD328002ACF2C9C006D4E20 /* PostDetail */,
 				FDD327F72ACF02AA006D4E20 /* Extensions */,
 				FDD327E42ACEEACA006D4E20 /* DTO */,
 				FDD327DE2ACEDEBB006D4E20 /* Services */,
@@ -171,8 +182,27 @@
 			isa = PBXGroup;
 			children = (
 				FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */,
+				FDD328092ACF38E7006D4E20 /* UIViewController+Functionality.swift */,
+				FDD3280B2ACF3D81006D4E20 /* Date+Configuration.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDD328002ACF2C9C006D4E20 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FDD328052ACF2F58006D4E20 /* Models */,
+				FDD328012ACF2CB9006D4E20 /* PostDetailViewController.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		FDD328052ACF2F58006D4E20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDD328032ACF2CD3006D4E20 /* PostDetailModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +222,7 @@
 			);
 			name = "iOS-Test-Task";
 			packageProductDependencies = (
+				FDD328072ACF30D9006D4E20 /* Kingfisher */,
 			);
 			productName = "iOS-Test-Task";
 			productReference = FDD327BD2ACEC6E3006D4E20 /* iOS-Test-Task.app */;
@@ -222,6 +253,7 @@
 			);
 			mainGroup = FDD327B42ACEC6E3006D4E20;
 			packageReferences = (
+				FDD328062ACF30D9006D4E20 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FDD327BE2ACEC6E3006D4E20 /* Products */;
 			projectDirPath = "";
@@ -255,11 +287,15 @@
 				FDD327C52ACEC6E3006D4E20 /* PostListViewController.swift in Sources */,
 				FDD327EA2ACEEB3F006D4E20 /* PostDetails.swift in Sources */,
 				FDD327F92ACF02BB006D4E20 /* UILabel+Configuration.swift in Sources */,
+				FDD3280A2ACF38E7006D4E20 /* UIViewController+Functionality.swift in Sources */,
 				FDD327E82ACEEB28006D4E20 /* PostListResponse.swift in Sources */,
 				FDD327E32ACEE1B4006D4E20 /* PostService.swift in Sources */,
 				FDD327EF2ACEEBA6006D4E20 /* PostListModel.swift in Sources */,
+				FDD3280C2ACF3D81006D4E20 /* Date+Configuration.swift in Sources */,
+				FDD328022ACF2CB9006D4E20 /* PostDetailViewController.swift in Sources */,
 				FDD327C12ACEC6E3006D4E20 /* AppDelegate.swift in Sources */,
 				FDD327DD2ACEDD2B006D4E20 /* QueryBuilder.swift in Sources */,
+				FDD328042ACF2CD3006D4E20 /* PostDetailModel.swift in Sources */,
 				FDD327C32ACEC6E3006D4E20 /* SceneDelegate.swift in Sources */,
 				FDD327E62ACEEAF9006D4E20 /* PostItem.swift in Sources */,
 				FDD327F62ACF017D006D4E20 /* Helper.swift in Sources */,
@@ -482,6 +518,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDD328062ACF30D9006D4E20 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDD328072ACF30D9006D4E20 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDD328062ACF30D9006D4E20 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDD327B52ACEC6E3006D4E20 /* Project object */;
 }

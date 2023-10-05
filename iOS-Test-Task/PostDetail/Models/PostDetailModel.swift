@@ -1,5 +1,5 @@
 //
-//  PostListModel.swift
+//  PostDetailModel.swift
 //  iOS-Test-Task
 //
 //  Created by Roman Ivanov on 05.10.2023.
@@ -7,28 +7,28 @@
 
 import Foundation
 
-class PostListModel {
+class PostDetailModel {
+    var postId: Int = 0
     let service = PostService()
+    var postDetails: PostDetails? = nil
     let queryBuilder = QueryBuilder()
     var isLoading = false
-    var posts: [PostItem] = []
-    var postId: Int? = nil
     
-    func fetchPosts(
-        onSuccess: @escaping(PostListResponse) -> Void,
+    func fetchPostDetails(
+        onSuccess: @escaping(PostDetailsResponse) -> Void,
         onError: @escaping(ServiceError) -> Void
     ) {
         isLoading = true
-        service.fetchPosts(url: queryBuilder.getAllPostsUrl()) { [weak self] (result: Result<PostListResponse, ServiceError>) in
+        service.fetchPosts(url: queryBuilder.getPostByIdUrl(id: String(postId))) { [weak self] (result: Result<PostDetailsResponse, ServiceError>) in
             guard let self else { return }
             
             switch result {
             case let .success(data):
-                self.posts = data.posts
-                self.isLoading = false
+                isLoading = false
+                postDetails = data.post
                 onSuccess(data)
             case let .failure(error):
-                self.isLoading = false
+                isLoading = false
                 onError(error)
             }
         }
