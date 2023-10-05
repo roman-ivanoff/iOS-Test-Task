@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		FDD327C12ACEC6E3006D4E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327C02ACEC6E3006D4E20 /* AppDelegate.swift */; };
 		FDD327C32ACEC6E3006D4E20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327C22ACEC6E3006D4E20 /* SceneDelegate.swift */; };
-		FDD327C52ACEC6E3006D4E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327C42ACEC6E3006D4E20 /* ViewController.swift */; };
+		FDD327C52ACEC6E3006D4E20 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327C42ACEC6E3006D4E20 /* PostListViewController.swift */; };
 		FDD327C82ACEC6E3006D4E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD327C62ACEC6E3006D4E20 /* Main.storyboard */; };
 		FDD327CA2ACEC6E7006D4E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD327C92ACEC6E7006D4E20 /* Assets.xcassets */; };
 		FDD327CD2ACEC6E7006D4E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD327CB2ACEC6E7006D4E20 /* LaunchScreen.storyboard */; };
+		FDD327DA2ACECA55006D4E20 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327D82ACECA55006D4E20 /* PostTableViewCell.swift */; };
+		FDD327DB2ACECA55006D4E20 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD327D92ACECA55006D4E20 /* PostTableViewCell.xib */; };
+		FDD327DD2ACEDD2B006D4E20 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327DC2ACEDD2B006D4E20 /* QueryBuilder.swift */; };
+		FDD327E12ACEDEDC006D4E20 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327E02ACEDEDC006D4E20 /* ServiceError.swift */; };
+		FDD327E32ACEE1B4006D4E20 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327E22ACEE1B4006D4E20 /* PostService.swift */; };
+		FDD327E62ACEEAF9006D4E20 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327E52ACEEAF9006D4E20 /* PostItem.swift */; };
+		FDD327E82ACEEB28006D4E20 /* PostListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327E72ACEEB28006D4E20 /* PostListResponse.swift */; };
+		FDD327EA2ACEEB3F006D4E20 /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327E92ACEEB3F006D4E20 /* PostDetails.swift */; };
+		FDD327EC2ACEEB70006D4E20 /* PostDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327EB2ACEEB70006D4E20 /* PostDetailsResponse.swift */; };
+		FDD327EF2ACEEBA6006D4E20 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327EE2ACEEBA6006D4E20 /* PostListModel.swift */; };
+		FDD327F62ACF017D006D4E20 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327F52ACF017D006D4E20 /* Helper.swift */; };
+		FDD327F92ACF02BB006D4E20 /* UILabel+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDD327BD2ACEC6E3006D4E20 /* iOS-Test-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Test-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD327C02ACEC6E3006D4E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD327C22ACEC6E3006D4E20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDD327C42ACEC6E3006D4E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDD327C42ACEC6E3006D4E20 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		FDD327C72ACEC6E3006D4E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDD327C92ACEC6E7006D4E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD327CC2ACEC6E7006D4E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD327CE2ACEC6E7006D4E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD327D82ACECA55006D4E20 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FDD327D92ACECA55006D4E20 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		FDD327DC2ACEDD2B006D4E20 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		FDD327E02ACEDEDC006D4E20 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		FDD327E22ACEE1B4006D4E20 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FDD327E52ACEEAF9006D4E20 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		FDD327E72ACEEB28006D4E20 /* PostListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListResponse.swift; sourceTree = "<group>"; };
+		FDD327E92ACEEB3F006D4E20 /* PostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
+		FDD327EB2ACEEB70006D4E20 /* PostDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsResponse.swift; sourceTree = "<group>"; };
+		FDD327EE2ACEEBA6006D4E20 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
+		FDD327F52ACF017D006D4E20 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Configuration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,99 @@
 		FDD327BF2ACEC6E3006D4E20 /* iOS-Test-Task */ = {
 			isa = PBXGroup;
 			children = (
-				FDD327C02ACEC6E3006D4E20 /* AppDelegate.swift */,
-				FDD327C22ACEC6E3006D4E20 /* SceneDelegate.swift */,
-				FDD327C42ACEC6E3006D4E20 /* ViewController.swift */,
+				FDD327F72ACF02AA006D4E20 /* Extensions */,
+				FDD327E42ACEEACA006D4E20 /* DTO */,
+				FDD327DE2ACEDEBB006D4E20 /* Services */,
+				FDD327D62ACEC804006D4E20 /* Posts */,
+				FDD327D52ACEC773006D4E20 /* Resources */,
+				FDD327D42ACEC72E006D4E20 /* Supporting Files */,
 				FDD327C62ACEC6E3006D4E20 /* Main.storyboard */,
-				FDD327C92ACEC6E7006D4E20 /* Assets.xcassets */,
 				FDD327CB2ACEC6E7006D4E20 /* LaunchScreen.storyboard */,
-				FDD327CE2ACEC6E7006D4E20 /* Info.plist */,
 			);
 			path = "iOS-Test-Task";
+			sourceTree = "<group>";
+		};
+		FDD327D42ACEC72E006D4E20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327C02ACEC6E3006D4E20 /* AppDelegate.swift */,
+				FDD327C22ACEC6E3006D4E20 /* SceneDelegate.swift */,
+				FDD327CE2ACEC6E7006D4E20 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDD327D52ACEC773006D4E20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327C92ACEC6E7006D4E20 /* Assets.xcassets */,
+				FDD327DC2ACEDD2B006D4E20 /* QueryBuilder.swift */,
+				FDD327F52ACF017D006D4E20 /* Helper.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDD327D62ACEC804006D4E20 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327ED2ACEEB99006D4E20 /* Models */,
+				FDD327D72ACEC9D5006D4E20 /* Views */,
+				FDD327C42ACEC6E3006D4E20 /* PostListViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		FDD327D72ACEC9D5006D4E20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327D82ACECA55006D4E20 /* PostTableViewCell.swift */,
+				FDD327D92ACECA55006D4E20 /* PostTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDD327DE2ACEDEBB006D4E20 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327DF2ACEDEC6006D4E20 /* Networking */,
+				FDD327E02ACEDEDC006D4E20 /* ServiceError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDD327DF2ACEDEC6006D4E20 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327E22ACEE1B4006D4E20 /* PostService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FDD327E42ACEEACA006D4E20 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327E52ACEEAF9006D4E20 /* PostItem.swift */,
+				FDD327E72ACEEB28006D4E20 /* PostListResponse.swift */,
+				FDD327E92ACEEB3F006D4E20 /* PostDetails.swift */,
+				FDD327EB2ACEEB70006D4E20 /* PostDetailsResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		FDD327ED2ACEEB99006D4E20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327EE2ACEEBA6006D4E20 /* PostListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDD327F72ACF02AA006D4E20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDD327F82ACF02BB006D4E20 /* UILabel+Configuration.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +191,8 @@
 			dependencies = (
 			);
 			name = "iOS-Test-Task";
+			packageProductDependencies = (
+			);
 			productName = "iOS-Test-Task";
 			productReference = FDD327BD2ACEC6E3006D4E20 /* iOS-Test-Task.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +221,8 @@
 				Base,
 			);
 			mainGroup = FDD327B42ACEC6E3006D4E20;
+			packageReferences = (
+			);
 			productRefGroup = FDD327BE2ACEC6E3006D4E20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +240,7 @@
 				FDD327CD2ACEC6E7006D4E20 /* LaunchScreen.storyboard in Resources */,
 				FDD327CA2ACEC6E7006D4E20 /* Assets.xcassets in Resources */,
 				FDD327C82ACEC6E3006D4E20 /* Main.storyboard in Resources */,
+				FDD327DB2ACECA55006D4E20 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +251,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD327C52ACEC6E3006D4E20 /* ViewController.swift in Sources */,
+				FDD327E12ACEDEDC006D4E20 /* ServiceError.swift in Sources */,
+				FDD327C52ACEC6E3006D4E20 /* PostListViewController.swift in Sources */,
+				FDD327EA2ACEEB3F006D4E20 /* PostDetails.swift in Sources */,
+				FDD327F92ACF02BB006D4E20 /* UILabel+Configuration.swift in Sources */,
+				FDD327E82ACEEB28006D4E20 /* PostListResponse.swift in Sources */,
+				FDD327E32ACEE1B4006D4E20 /* PostService.swift in Sources */,
+				FDD327EF2ACEEBA6006D4E20 /* PostListModel.swift in Sources */,
 				FDD327C12ACEC6E3006D4E20 /* AppDelegate.swift in Sources */,
+				FDD327DD2ACEDD2B006D4E20 /* QueryBuilder.swift in Sources */,
 				FDD327C32ACEC6E3006D4E20 /* SceneDelegate.swift in Sources */,
+				FDD327E62ACEEAF9006D4E20 /* PostItem.swift in Sources */,
+				FDD327F62ACF017D006D4E20 /* Helper.swift in Sources */,
+				FDD327DA2ACECA55006D4E20 /* PostTableViewCell.swift in Sources */,
+				FDD327EC2ACEEB70006D4E20 /* PostDetailsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +412,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Test-Task/Info.plist";
+				INFOPLIST_FILE = "iOS-Test-Task/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +440,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Test-Task/Info.plist";
+				INFOPLIST_FILE = "iOS-Test-Task/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
